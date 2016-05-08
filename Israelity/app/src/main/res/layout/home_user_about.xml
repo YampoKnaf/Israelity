@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bar_low_more">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="70dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/userAboutPoliticsSide"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/userAboutReligion"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/userAboutCity"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/userAboutAutoriseInApp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="70dp"
+        android:id="@+id/userAboutMessageToReaders"/>
+
+</LinearLayout>
