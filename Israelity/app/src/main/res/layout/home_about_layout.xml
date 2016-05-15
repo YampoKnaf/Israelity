@@ -14,8 +14,18 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:id="@+id/HomeAboutLayout"
-            tools:context=".DeviceFragment" >
+            tools:context=".DeviceFragment">
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userPhotoHomeAboutLayOut"
+                android:orientation="vertical"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userAboutHomeAboutLayOut"
+                android:orientation="vertical"/>
 
         </LinearLayout>
     </ScrollView>

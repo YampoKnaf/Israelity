@@ -7,10 +7,13 @@ package com.yampoknaf.israelity;
         import android.view.View;
         import android.view.ViewGroup;
 
+        import com.yampoknaf.israelity.HomeFragments.HomeUserAbout;
+        import com.yampoknaf.israelity.HomeFragments.PrivateMessage;
+
 public class Home extends Fragment {
 
 
-    private FragmentTabHost tabHost;
+    private static FragmentTabHost tabHost;
 
     public Home() {
 
@@ -30,14 +33,18 @@ public class Home extends Fragment {
         //tabHost = new FragmentTabHost(getActivity());
         tabHost.setup(getActivity(), getChildFragmentManager(), R.id.realtabcontents);
 
-        tabHost.addTab(tabHost.newTabSpec("tab_test1").setIndicator("TAB1_t"), HomeUserAbout.class, null);
-        tabHost.addTab(tabHost.newTabSpec("tab_test2").setIndicator("TAB2_t"), HomeUserAbout.class, null);
-        tabHost.addTab(tabHost.newTabSpec("tab_test3").setIndicator("TAB3_t"), HomeUserAbout.class, null);
-        tabHost.addTab(tabHost.newTabSpec("tab_test4").setIndicator("TAB4_t") , HomeUserAbout.class , null);
-        tabHost.addTab(tabHost.newTabSpec("tab_test5").setIndicator("TAB5_t"), HomeUserAbout.class, null);
+        tabHost.addTab(tabHost.newTabSpec("tab_test1").setIndicator("Me"), HomeUserAbout.class, null);
+        tabHost.addTab(tabHost.newTabSpec("tab_test2").setIndicator("Private Message"), PrivateMessage.class, null);
+        tabHost.addTab(tabHost.newTabSpec("tab_test3").setIndicator("Score Update"), HomeUserAbout.class, null);
+        tabHost.addTab(tabHost.newTabSpec("tab_test4").setIndicator("People i Follow") , HomeUserAbout.class , null);
+        tabHost.addTab(tabHost.newTabSpec("tab_test5").setIndicator("Setting"), HomeUserAbout.class, null);
         tabHost.setCurrentTab(0);
 
         return v;
+    }
+
+    public static void goToMainTab(){
+        tabHost.setCurrentTab(0);
     }
 
     @Override
